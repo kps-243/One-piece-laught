@@ -1,0 +1,107 @@
+/************************************************************
+
+Author: Morgan Kpassi
+Version: 1.0
+Tags: One piece laugh, 30DaysJavaScript
+
+**************************************************************
+
+Table of Contents:
+
+  0. GLOBAL
+  1. HEADER
+  2. KEYS
+  3. CREDITS
+
+**************************************************************/
+
+
+/************************************************
+0.	GLOBAL
+************************************************/
+@font-face {
+  font-family: 'interface';
+  src: url('/01_DrumKit/assets/webfonts_ONE-PIECE/ONE-PIECE.ttf.woff') format('woff'),
+       url('/01_DrumKit/assets/webfonts_ONE-PIECE/ONE-PIECE.ttf.eot') format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+body {
+  background: #201d15 url("../images/luffy.jpg") no-repeat fixed center;
+  background-size: cover;
+  font-family: 'interface', sans-serif;
+  color: white;
+}
+
+/************************************************
+1.	HEADER
+************************************************/
+
+header {
+  text-align: center;
+  padding: .5rem;
+}
+
+#site-title {
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+/************************************************
+2.	KEYS
+************************************************/
+
+.keys {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.key {
+  background: #2c3745;
+  padding: 1rem;
+  width: 4rem;
+  margin: 1rem 0;
+  border-radius: .5rem;
+  transition: all 0.07s;
+}
+
+.key kbd {
+  font-family: 'Metal Mania', cursive;
+  font-size: 2rem;
+  color: #f8ecce;
+}
+
+.playing {
+  background: #e9e9e9;
+  box-shadow: 0 0 .5rem #000;
+  transform: scale(1.3);
+}
+
+p.sound{
+  font-family: 'Metal Mania', cursive;
+}
+
+/************************************************
+3.	CREDITS
+************************************************/
+
+footer {
+  padding: 2rem;
+  font-size: .7rem;
+  color: #466d82;
+  bottom: 0;
+}
