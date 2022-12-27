@@ -21,8 +21,9 @@ Table of Contents:
 ************************************************/
 @font-face {
   font-family: 'interface';
-  src: url('../webfonts_ONE-PIECE/ONE-PIECE.ttf.woff') format('woff'),
-       url('../webfonts_ONE-PIECE/ONE-PIECE.ttf.eot') format('eot');
+  src:  url('../webfonts_ONE-PIECE/ONE-PIECE.ttf.eot') format('eot'),
+        url('../webfonts_ONE-PIECE/ONE-PIECE.ttf.woff') format('woff');
+       
   font-weight: normal;
   font-style: normal;
 }
