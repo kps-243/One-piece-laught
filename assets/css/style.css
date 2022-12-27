@@ -21,8 +21,8 @@ Table of Contents:
 ************************************************/
 @font-face {
   font-family: 'interface';
-  src: url('/01_DrumKit/assets/webfonts_ONE-PIECE/ONE-PIECE.ttf.woff') format('woff'),
-       url('/01_DrumKit/assets/webfonts_ONE-PIECE/ONE-PIECE.ttf.eot') format('eot');
+  src: url('/assets/webfonts_ONE-PIECE/ONE-PIECE.ttf.woff') format('woff'),
+       url('/assets/webfonts_ONE-PIECE/ONE-PIECE.ttf.eot') format('eot');
   font-weight: normal;
   font-style: normal;
 }
@@ -71,7 +71,7 @@ h2{
 }
 
 .key {
-  background: #2c3745;
+  background: linear-gradient(to bottom right, #e92222, rgb(8, 115, 40)) ;
   padding: 1rem;
   width: 4rem;
   margin: 1rem 0;
