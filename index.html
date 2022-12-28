@@ -16,27 +16,27 @@
   </header>
   <!-- Main section -->
   <main class="keys">
-    <div data-key="67" class="key">
+    <div data-key="67" class="key" onclick="soundClick(caesar);">
       <kbd>C</kbd>
       <p class="sound">César</p>
     </div>
-    <div data-key="69" class="key">
+    <div data-key="69" class="key" onclick="soundClick(wb);">
       <kbd>E</kbd>
       <p class="sound">Edward</p>
     </div>
-    <div data-key="68" class="key">
+    <div data-key="68" class="key" onclick="soundClick(doffi);">
       <kbd>D</kbd>
       <p class="sound">Doflamingo</p>
     </div>
-    <div data-key="66" class="key">
+    <div data-key="66" class="key" onclick="soundClick(brook);">
       <kbd>B</kbd>
       <p class="sound">Brook</p>
     </div>
-    <div data-key="75" class="key">
+    <div data-key="75" class="key" onclick="soundClick(kaido);">
       <kbd>K</kbd>
       <p class="sound">Kaido</p>
     </div>
-    <div data-key="84" class="key">
+    <div data-key="84" class="key" onclick="soundClick(bb);">
       <kbd>T</kbd>
       <p class="sound">Teach</p>
     </div>
@@ -46,17 +46,29 @@
     <p>&copy; wallpapersden.com</p>
   </footer>
 
-  <audio data-key="67" src="assets/audio/Shirolololo Dr. Caesar Laugh [One Piece].mp3"></audio>
-  <audio data-key="66" src="assets/audio/One piece - Brook yohohoho.mp3"></audio>
-  <audio data-key="68" src="assets/audio/RireLaugh Doflamingo.mp3"></audio>
-  <audio data-key="69" src="assets/audio/One Piece  Whitebeard Laugh  720p.mp3"></audio>
-  <audio data-key="84" src="assets/audio/One Piece - Rire Barbe Noire.mp3"></audio>
-  <audio data-key="75" src="assets/audio/Kaido Laugh  One Piece.mp3"></audio>
+  <audio id="caesar" data-key="67" src="assets/audio/Shirolololo Dr. Caesar Laugh [One Piece].mp3"></audio>
+  <audio class="audio" id="brook" data-key="66" src="assets/audio/One piece - Brook yohohoho.mp3"></audio>
+  <audio class="audio" id="doffi" data-key="68" src="assets/audio/RireLaugh Doflamingo.mp3"></audio>
+  <audio class="audio" id="wb" data-key="69" src="assets/audio/One Piece  Whitebeard Laugh  720p.mp3"></audio>
+  <audio class="audio" id="bb" data-key="84" src="assets/audio/One Piece - Rire Barbe Noire.mp3"></audio>
+  <audio class="audio" id="kaido" data-key="75" src="assets/audio/Kaido Laugh  One Piece.mp3"></audio>
   
 
   <script type="text/javascript">
 
   //alert('Ce site utilise du son. Augmenter le volume pour profiter pleinement des fonctionnalités');
+  let caesar = document.getElementById('caesar');
+  let brook = document.getElementById('brook');
+  let doffi = document.getElementById('doffi');
+  let wb = document.getElementById('wb');
+  let bb = document.getElementById('bb');
+  let kaido = document.getElementById('kaido');
+  
+  function soundClick(audio) {
+    audio.currentTime = 0;
+    audio.play();
+  }
+
 
   function playSound(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
